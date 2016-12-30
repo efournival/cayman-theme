@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8">
+    <title>XVM Updater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cayman.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script>
+      function download() {
+        swal({
+          title: "Encore une étape...",
+          text: '<p><strong>XVM Updater</strong> a besoin d\'un serveur web coutant plus de 50&nbsp;€ par an. S\'il vous plaît, si vous trouvez mon travail utile, pensez à faire un don. Merci !</p> <p style="margin-top: 1em;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNFVWGBY9656W" target="_blank"><img src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" alt="Paypal" /></a></p>',
+          html: true,
+          confirmButtonText: "Télécharger",
+          allowOutsideClick: true
+        }, function(isConfirm) {
+          if (isConfirm) {
+            window.location.href = "https://www.edgar-fournival.fr/obj/wotxvm/download";
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">XVM Updater</h1>
+      <h2 class="project-tagline">Installateur en un clic du mod XVM pour World of Tanks</h2>
+      <a href="javascript:download()" class="btn">Télécharger</a>
+    </section>
+
+    <section class="main-content">
+      <img src="assets/xu-fr.png" style="display: block; margin: auto;" alt="XVM Updater screenshot" />
+      <p><strong>XVM Updater</strong> est un petit utilitaire vous permettant d'installer (ou de mettre à jour dans sa dernière version) le <a href="http://www.modxvm.com/fr/">eXtended Visualization Mod</a> (XVM).</p>
+      <p>Cette appli va automatiquement détecter le répertoire d'installation du jeu et y télécharger les fichiers nécessaires.</p>
+      <p>Elle propose également des fonctionnalités intéressantes comme la sauvegarde de votre configuration actuelle ou l'installation simple d'une toute faite à partir d'un menu déroulant.</p>
+
+      <h1>Liens utiles</h1>
+      <ul>
+        <li><a href="http://www.modxvm.com/fr">Le site officiel d'XVM</a></li>
+        <li><a href="http://forum.worldoftanks.eu/index.php?/topic/196657-xvm-updater-28-installationmise-a-jour-en-1-clic/">Le topic d'<strong>XVM Updater</strong> sur les forums européens</a></li>
+        <li><a href="http://forum.worldoftanks.eu/index.php?/topic/388374-tutoriel-activer-xvm-pour-les-statistiques-procedure/">Tutoriel pour activer les statistiques</a></li>
+        <li><a href="https://github.com/efournival/xvm-updater">Le code source d'<strong>XVM Updater</strong> sur GitHub</a></li>
+        <li><a href="https://github.com/efournival/xvm-updater/wiki/Changelog-(French)">Liste des changements apportés</a></li>
+      </ul>
+
+      <h1>Contribuer</h1>
+      <p><strong>XVM Updater</strong> est développé uniquement durant mon temps libre. Je ne gagne rien, il n'y a même pas de pubs.</p>
+      <p>Cependant, je paye actuellement 51&nbsp;€ par an pour le serveur web qui permet d'héberger et de vérifier les fichiers d'installation d'XVM.</p>
+      <p>Si vous le voulez, vous pouvez me donner un petit coup de pouce en donnant via Paypal</p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="PNFVWGBY9656W">
+        <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+      </form>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/efournival/xvm-updater">XVM Updater</a> est développé par <a href="https://github.com/efournival">efournival</a>.</span>
+        <span class="site-footer-credits">Cette page a été généré par <a href="https://pages.github.com">GitHub Pages</a> en utilisant le <a href="https://github.com/jasonlong/cayman-theme">thème Cayman</a> par <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+    </section>
+
+  </body>
+</html>
