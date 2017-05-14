@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/cayman.css">
-    <link rel="stylesheet" href="css/sweetalert.css">
-    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <script src="js/sweetalert2.min.js"></script>
     <script>
       function download() {
         swal({
           title: "Encore une étape...",
-          text: '<p><strong>XVM Updater</strong> a besoin d\'un serveur web coutant plus de 50&nbsp;€ par an. S\'il vous plaît, si vous trouvez mon travail utile, pensez à faire un don. Merci !</p> <p style="margin-top: 1em;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNFVWGBY9656W" target="_blank"><img src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" alt="Paypal" /></a></p>',
-          html: true,
+          html: '<p><strong>XVM Updater</strong> a besoin d\'un serveur web coutant plus de 50&nbsp;€ par an. S\'il vous plaît, si vous trouvez mon travail utile, pensez à faire un don. Merci !</p><form style="margin-top: 1em;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="PNFVWGBY9656W"><input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne"></form>',
           confirmButtonText: "Télécharger",
           allowOutsideClick: true
         }, function(isConfirm) {
@@ -24,8 +23,7 @@
           }
         });
       }
-    </script>
-    <script>
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -52,14 +50,14 @@
         <li><a href="http://www.modxvm.com/fr">Le site officiel d'XVM</a></li>
         <li><a href="http://forum.worldoftanks.eu/index.php?/topic/196657-xvm-updater-28-installationmise-a-jour-en-1-clic/">Le topic d'<strong>XVM Updater</strong> sur les forums européens</a></li>
         <li><a href="http://forum.worldoftanks.eu/index.php?/topic/388374-tutoriel-activer-xvm-pour-les-statistiques-procedure/">Tutoriel pour activer les statistiques</a></li>
-        <li><a href="https://github.com/efournival/xvm-updater">Le code source d'<strong>XVM Updater</strong> sur GitHub</a></li>
-        <li><a href="https://github.com/efournival/xvm-updater/wiki/Changelog-(French)">Liste des changements apportés</a></li>
+        <li><a href="https://github.com/xvm-updater/xvm-updater">Le code source d'<strong>XVM Updater</strong> sur GitHub</a></li>
+        <li><a href="https://github.com/xvm-updater/xvm-updater/wiki/Changelog-(French)">Liste des changements apportés</a></li>
       </ul>
 
       <h1>Contribuer</h1>
       <p><strong>XVM Updater</strong> est développé uniquement durant mon temps libre. Je ne gagne rien, il n'y a même pas de pubs.</p>
       <p>Cependant, je paye actuellement 51&nbsp;€ par an pour le serveur web qui permet d'héberger et de vérifier les fichiers d'installation d'XVM.</p>
-      <p>Si vous le voulez, vous pouvez me donner un petit coup de pouce en faisant un don via Paypal</p>
+      <p>Si vous le voulez, vous pouvez me donner un petit coup de pouce en faisant un don via Paypal.</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="PNFVWGBY9656W">
@@ -67,7 +65,7 @@
       </form>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/efournival/xvm-updater">XVM Updater</a> est développé par <a href="https://github.com/efournival">efournival</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/xvm-updater/xvm-updater">XVM Updater</a> est développé par <a href="https://github.com/efournival">efournival</a>.</span>
         <span class="site-footer-credits">Cette page a été généré par <a href="https://pages.github.com">GitHub Pages</a> en utilisant le <a href="https://github.com/jasonlong/cayman-theme">thème Cayman</a> par <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
     </section>
