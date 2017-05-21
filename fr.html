@@ -17,10 +17,8 @@
           html: '<p><strong>XVM Updater</strong> a besoin d\'un serveur web coutant plus de 50&nbsp;€ par an. S\'il vous plaît, si vous trouvez mon travail utile, pensez à faire un don. Merci !</p><form style="margin-top: 1em;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="PNFVWGBY9656W"><input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne"></form>',
           confirmButtonText: "Télécharger",
           allowOutsideClick: true
-        }, function(isConfirm) {
-          if (isConfirm) {
-            window.location.href = "https://www.edgar-fournival.fr/obj/wotxvm/download";
-          }
+        }).then(function() {
+          window.location.href = "https://xvm.edgar-fournival.fr/get-xvm-updater";
         });
       }
 
